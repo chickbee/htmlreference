@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="this is a description defined in a meta tag">
+		<meta name="author" content="Tien Phan">
+		<meta name="keywords" content="html, reference">
+		<meta nam="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Title of the website</title>
+	</head>
+
+	<body>
+		<!-- an example of a header tag that is used for organization of the website -->
+		<header>
+			<h1>this is a header tag that is used for headers and the size can go from h1-h6 from large to small</h1>
+			<!-- an example of a navigation tag -->
+			<nav>
+			</nav>
+		</header>
+
+		<!-- an example of a main tag that is used for organization of the website -->
+		<main>
+			<!-- an example of an article tag used in main to organize article based content -->
+			<article>
+				<!-- an example of a section tag used as a child of article to organize content -->
+				<section>
+					<p>this is a paragraph tag</p>
+					<p>this is a new paragraph tag that automatically spaces itself from other tags </p>
+					<p>this is an example of using <b>bold</b> and <i>italics</i> tags within a paragraph tag</p>
+
+					<!-- the br tag is called break and it is a self closing tag that creates a new line-->
+					<br/>
+
+					<!-- the hr tag is called a horizontal line and it is a self closing 
+						that creates a line going through the page horizontally -->
+					<hr/>
+
+					<p>This is an example of a <big>large</big> and <small>small</small> text</p>
+					<p>an example of subscript: h<sub>2</sub>o</p>
+					<p>an example of superscript: 10<sup>2</sup></p>
+					<p style="color: teal; background-color:lightgray;">an example of basic styling which are tag attributes to style tags</p>
+					<a href="https://www.google.com/" target="/blank">The a tag is used to create links and can be used for images, and webpages and the target
+					can be used to open the link in a new tab. Html tags can also be used to style the text</a>
+
+					<!-- the img tag is used to display an image and can be linked in a url or a file.  
+					there are attributes for example: alt which is used if the image doesn't load and displays content if image does not load. 
+					the height/width of the image can be adjusted also note that if you only specify one size of height or width
+					it automatically adjusts the aspect ratio of the other side-->
+					<img src="images/chonkybee.png" height="200" alt="a chonky bee"/><br/>
+					<img src="https://i.pinimg.com/originals/e5/9c/93/e59c939f62371c3902de98d557cf9e79.jpg" height="200" alt="a chick bee"/><hr/>
+					
+					<!-- there is also attributes that allow the video to autoplay, loop, and create a thumbnail -->
+					<video src="videos/coolComputerWoo.mp4" poster="images/peepo-nerd-glasses.gif" height="500" controls>video of a cool computer</video>
+					<!-- another method for a video is to embed the video from youtube using iframe which can be accessed from a video with the share button -->
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/_6Hfl8NdAFY" title="YouTube video player" frameborder="0" 
+																		      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><hr/>
+
+					<ul>
+						<li>item 1</li>
+						<li>item 2</li>
+						<li>item 3</li>
+					</ul>
+					
+					<!-- by default ordered list are numbered but the attribute type can change how it is ordered when specified -->
+					<ol>	
+						<li>item 1</li>
+						<li>item 2</li>
+						<li>item 3</li>
+					</ol>
+
+					<dl>
+						<dt>term 1</dt>
+							<dd>description of term 1</dd>
+						<dt>term 2</dt>
+							<dd>description of term 2</dd>
+						<dt>term 3</dt>
+							<dd>description of term 3</dd>
+					</dl><hr/>
+
+					<table>
+						<thead>
+							<caption>Caption of table</caption>
+							<tr>
+								<th>header item 1</th>
+								<th>header item 2</th>
+								<th>header item 3</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<!-- there is an attribute called colspan that takes in a numerical value that changes how many 
+									columns the item takes -->
+								<td>item 1</td>
+								<td>item 2</td>
+								<td>item 3</td>
+							</tr>
+							<tr>
+								<td>item 4</td>
+								<td>item 5</td>
+								<td>item 6</td>
+							</tr>
+						</tbody>
+					</table><hr/>
+
+					<span>inline span container 1</span>
+					<span>inline span container 2</span>
+					<div>block div container 1</div>
+					<div>block div container 2</div><hr/>
+				
+					<!-- form is a wrapper for inputs -->
+					<form>
+						<input type="text" value="default text"/>
+						<input type="password" value="enter a password"/>
+						<input type="date"/>
+						<input type="range"/>
+						<input type="file"/>
+						<input type="checkbox"/>
+						<input name="btn" type="radio"/>
+						<input name="btn" type="radio"/>
+						<input type="submit"/>
+
+						<textarea>
+							can also define the amount of rows and columns the text area has
+						</textarea>
+					</form><hr/>
+
+					<iframe src="https://fr.wikipedia.org/wiki/Main_Page" height="800" width="800" frameborder="0">displays this if content is not loaded</iframe><hr/>
+				</section>
+			</article>
+
+			<!-- an aside content is used when it's something that has nothing to do with the content like an ad -->
+			<aside>
+			</aside>
+		</main>
+
+		<!-- an example of a footer tag that is used for organization of content of a website -->
+		<footer>
+		</footer>
+	</body>
+</html>
